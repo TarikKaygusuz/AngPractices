@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html ng-app="">
+
+<head>
+    <meta charset="UTF-8">
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+</head>
+
+
+<body>
+
+<p>
+The ng-app directive initializes an AngularJS application. <br>
+The ng-init directive initializes application data.<br>
+The ng-model directive binds the value of HTML controls (input, select, textarea) to application data.g-app directive init
+</p>
+
+<div ng-app="" ng-init="firstName='John'">
+    <p>Name: <input type="text" ng-model="firstName"></p>
+    <p>You wrote: {{ firstName }}</p>
+</div>
+
+<div ng-init="quantity=1;price=5">
+    Quantity: <input type="number"	ng-model="quantity">
+    Costs:    <input type="number" ng-model="price">
+    Total in dollar: {{ quantity * price }}
+</div>
+
+
+
+
+</body>
+</html>

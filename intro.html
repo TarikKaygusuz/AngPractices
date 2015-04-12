@@ -30,7 +30,9 @@ The ng-app directive defines the application, the ng-controller directive define
 <div ng-controller="myCtrl">
 
     <script>
+        /*AngularJS modules define applications:*/
         var app = angular.module('myApp', []);
+        /*AngularJS controllers control applications:*/
         app.controller('myCtrl', function($scope) {
             $scope.firstName= "Tarık";
             $scope.lastName= "Kaygusuz";
