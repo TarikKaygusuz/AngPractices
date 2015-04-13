@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html ng-app="Data" >
+
+<head>
+    <meta charset="UTF-8">
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+
+
+    <style>
+        table, th , td {
+            border: 1px solid grey;
+            border-collapse: collapse;
+            padding: 5px;
+        }
+        table tr:nth-child(odd) {
+            background-color: #f1f1f1;
+        }
+        table tr:nth-child(even) {
+            background-color: #ffffff;
+        }
+    </style>
+</head>
+
+
+<body>
+
+
+<div ng-controller="customersJsonCtrl">
+
+    <table>
+        <tr ng-repeat="x in names">
+            <td>{{ x.Name }}</td>
+            <td>{{ x.Country | uppercase }}</td>
+        </tr>
+    </table>
+
+</div>
+
+
+<!--external file-->
+<script src="../controllers/customerJsonController.js"></script>
+
+</body>
+</html>
