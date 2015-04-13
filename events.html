@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html ng-app="myapp">
+
+<head>
+    <meta charset="UTF-8">
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+</head>
+
+<body>
+
+<p>
+AngularJS has its own HTML events directives.
+</p>
+
+<p>
+The ng-click directive defines an AngularJS click event.
+</p>
+
+<div ng-controller="myCtrl">
+    <button ng-click="count = count + 1">Click me!</button>
+
+    <p>{{ count }}</p>
+</div>
+
+
+
+<p>
+    Hiding HTML Elements
+</p>
+
+<p>
+    The ng-hide directive can be used to set the visibility of a part of an application. <br>
+    The value ng-hide="true" makes an HTML element invisible.<br>
+    The value ng-hide="false" makes the element visible.
+</p>
+
+
+
+
+
+
+<!--external file-->
+<script src="controllers/myController.js"></script>
+
+</body>
+
+</html>

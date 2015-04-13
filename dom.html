@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html ng-app="">
+
+<head>
+    <meta charset="UTF-8">
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+</head>
+
+<body>
+
+<p>
+AngularJS has directives for binding application data to the attributes of HTML DOM elements.
+</p>
+
+<div>
+    The ng-disabled directive binds the application data mySwitch to the HTML button's disabled attribute.
+<br>
+    The ng-model directive binds the value of the HTML checkbox element to the value of mySwitch.
+<br>
+    If the value of mySwitch evaluates to true, the button will be disabled:
+    <p>
+        <button ng-disabled="mySwitch">Click Me!</button>
+    </p>
+
+    <p>
+        <input type="checkbox" ng-model="mySwitch">Button
+    </p>
+</div>
+
+
+<div>
+    <p ng-show="true">I am visible.</p>
+    <p ng-show="false">I am not visible.</p>
+    <p ng-hide="true">I am not visible.</p>
+</div>
+
+
+
+
+
+
+</body>
+
+</html>
